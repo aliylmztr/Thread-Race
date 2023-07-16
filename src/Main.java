@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        Course process = new Course();
+        Course course = new Course();
 
-        Thread t1 = new Thread(process);
-        Thread t2 = new Thread(process);
-        Thread t3 = new Thread(process);
-        Thread t4 = new Thread(process);
+        Thread t1 = new Thread(course);
+        Thread t2 = new Thread(course);
+        Thread t3 = new Thread(course);
+        Thread t4 = new Thread(course);
 
         t1.start();
         t1.join();
